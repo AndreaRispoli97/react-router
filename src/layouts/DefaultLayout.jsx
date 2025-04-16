@@ -8,7 +8,7 @@ function DefaultLayout() {
         <>
             <header><MainNav /></header>
             <main><Outlet /></main>
-            <header>Footer</header>
+            <footer>Footer</footer>
         </>
     )
 }

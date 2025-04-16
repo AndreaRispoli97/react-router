@@ -11,17 +11,20 @@ const Posts = () => {
             .then(res => {
                 setData(res.data)
             })
+            .catch(err => {
+                alert(err)
+            })
     }
 
     useEffect((arrayData), [])
-    console.log(data);
 
     return (
         <>
-            <div>
-                <h1>posts</h1>
+            <h1>Card Posts</h1>
+            <div className="post-list">
+
                 {data.map(({ id, title, body }) => (
-                    <div key={id}>
+                    <div key={id} className="post-card">
                         <h2>{title}</h2>
                         <p>{body}</p>
                     </div>
