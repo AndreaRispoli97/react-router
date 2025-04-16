@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import MainNav from "../components/MainNav";
 const Posts = () => {
 
     useEffect(() => {
@@ -11,7 +11,10 @@ const Posts = () => {
     }, [])
 
     return (
-        <div><h1>Posts</h1></div>
+        <>
+            <div><h1>posts</h1></div>
+            <MainNav />
+        </>
     )
 
 

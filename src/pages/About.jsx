@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import MainNav from "../components/MainNav";
 const About = () => {
 
     useEffect(() => {
@@ -11,7 +11,11 @@ const About = () => {
     }, [])
 
     return (
-        <div><h1>About</h1></div>
+        <>
+            <div><h1>about</h1></div>
+            <MainNav />
+        </>
+
     )
 
 
