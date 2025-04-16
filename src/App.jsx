@@ -1,10 +1,20 @@
 import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import About from './pages/About'
+import Posts from './pages/Posts'
 
 function App() {
 
   return (
     <>
-      <div>ciao</div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/post' element={<Posts />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
