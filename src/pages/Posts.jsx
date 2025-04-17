@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios"
+import { Link } from "react-router-dom";
 
 const Posts = () => {
     const [data, setData] = useState([])
@@ -26,7 +27,9 @@ const Posts = () => {
                 {data.map(({ id, title, body }) => (
                     <div key={id} className="post-card">
                         <h2>{title}</h2>
-                        <p>{body}</p>
+
+
+                        <Link to={`/posts/${id}`}>Per più informazioni</Link>
                     </div>
 
                 ))}
