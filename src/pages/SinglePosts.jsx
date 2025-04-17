@@ -27,12 +27,18 @@ function SinglePost() {
 
     return (
         <>
-            <div>
-                <h1>{card.title}</h1>
-                <p>{card.body}</p>
+            <div className="custom-card">
+                <h1 className="card-title">{card.title}</h1>
+                <p className="card-body">{card.body}</p>
             </div>
-            <Link to={`/posts/${prevId}`}>Post Precedente</Link>
-            <Link to={`/posts/${postId}`}>Post Prossimo</Link>
+            <div className="post-navigation">
+                <Link to={`/posts/${prevId}`}>
+                    <p className="prev-post">Post Precedente</p>
+                </Link>
+                <Link to={`/posts/${postId}`}>
+                    <p className="next-post">Post Prossimo</p>
+                </Link>
+            </div>
 
         </>
     )

@@ -29,7 +29,7 @@ const Posts = () => {
                         <h2>{title}</h2>
 
 
-                        <Link to={`/posts/${id}`}>Per più informazioni</Link>
+                        <Link to={`/posts/${id}`}><p className="info-link">Per più informazioni</p></Link>
                     </div>
 
                 ))}
