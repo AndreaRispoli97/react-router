@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
 
 
-function SinglePost() {
+function PostDetails() {
 
     const navigate = useNavigate()
     const [prevId, setPrevId] = useState(0)
@@ -45,4 +45,4 @@ function SinglePost() {
 }
 
 
-export default SinglePost
+export default PostDetails

@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Posts from './pages/Posts'
 import DefaultLayout from './layouts/DefaultLayout'
-import SinglePost from './pages/SinglePosts'
+import PostDetails from './pages/PostDetails'
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path='/about' element={<About />} />
             <Route path='/posts' element={<Posts />} />
-            <Route path='/posts/:id' element={<SinglePost />} />
+            <Route path='/posts/:id' element={<PostDetails />} />
           </Route>
           <Route path='*' element={<div>Pagina non trovata</div>} />
         </Routes>
